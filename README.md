@@ -205,6 +205,21 @@ function CardTemplate(props) {
 ![image](https://user-images.githubusercontent.com/24218496/197916834-970f8a41-83be-46b0-bfd3-362402cbba36.png)
 
 # 2.Why diagram scale turns to be 1 whatever I configured? Because of that, I can't zoom in or zoom out.
+## render towice
+This function in diagram.js from your js libary called twice, first time scale is actually I configured, but the second time it became to be 1
+```js
+ Diagram.prototype._render = function (vm) {
+        var _this = this;
+        var _a, _b;
+        if (this._doNotRepaint && vm.node) {
+            return vm.node;
+        }
+        var _c = this._getContent(), size = _c.size, svgContent = _c.svgContent, htmlContent = _c.htmlContent;
+        this.events.fire(types_1.DiagramEvents.beforeRender, [size]);
+        this._diagramSize = size;
+        var _d = this.config, margin = _d.margin, type = _d.type, scale = _d.scale;
+       ...
+```
 ## code snapt
 ```js
 const diagram = new Diagram('diagram', {
