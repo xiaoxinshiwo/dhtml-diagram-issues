@@ -204,7 +204,7 @@ function CardTemplate(props) {
 ### from official diagram.js?v=5.0.0 library (github https://github.com/DHTMLX/react-diagram-demo)
 ![image](https://user-images.githubusercontent.com/24218496/197916834-970f8a41-83be-46b0-bfd3-362402cbba36.png)
 
-# 2.Why diagram scale turns to be 1 whatever I configured? Because of that, I can't zoom in or zoom out.
+# 2.Why diagram scale turns to be 1 whatever I configured? Because of that, I can't zoom in or zoom out.--resolved this by removing autoplacement.placemode property:"radial".
 ## render twice
 This function in diagram.js from your js library called twice, first time scale is actually I configured, but the second time it became to be 1
 ```js
@@ -419,4 +419,7 @@ function CardTemplate(props) {
 ]
 ```
 ![image](https://user-images.githubusercontent.com/24218496/203199013-432a1ac7-9f1d-4041-94ff-a6623bb834de.png)
+## resolved
+![image](https://user-images.githubusercontent.com/24218496/203212042-16e58d8d-14a5-406d-9a74-ccf3c86e78cb.png)
+
 
