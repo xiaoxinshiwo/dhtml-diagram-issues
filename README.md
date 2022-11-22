@@ -205,7 +205,7 @@ function CardTemplate(props) {
 ![image](https://user-images.githubusercontent.com/24218496/197916834-970f8a41-83be-46b0-bfd3-362402cbba36.png)
 
 # 2.Why diagram scale turns to be 1 whatever I configured? Because of that, I can't zoom in or zoom out.
-## render towice
+## render twice
 This function in diagram.js from your js libary called twice, first time scale is actually I configured, but the second time it became to be 1
 ```js
  Diagram.prototype._render = function (vm) {
