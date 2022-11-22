@@ -201,12 +201,12 @@ function CardTemplate(props) {
 ## differences using "dhtmlx-diagram-enterprise": "4.1.0" and libary from ../codebase/diagram.js?v=5.0.0
 ### from diagram-enterprise 4.1.0 diagram
 ![image](https://user-images.githubusercontent.com/24218496/197916767-ef67e50d-05be-47d6-b651-28ba9b80c914.png)
-### from official diagram.js?v=5.0.0 libary (github https://github.com/DHTMLX/react-diagram-demo)
+### from official diagram.js?v=5.0.0 library (github https://github.com/DHTMLX/react-diagram-demo)
 ![image](https://user-images.githubusercontent.com/24218496/197916834-970f8a41-83be-46b0-bfd3-362402cbba36.png)
 
 # 2.Why diagram scale turns to be 1 whatever I configured? Because of that, I can't zoom in or zoom out.
 ## render twice
-This function in diagram.js from your js libary called twice, first time scale is actually I configured, but the second time it became to be 1
+This function in diagram.js from your js library called twice, first time scale is actually I configured, but the second time it became to be 1
 ```js
  Diagram.prototype._render = function (vm) {
         var _this = this;
